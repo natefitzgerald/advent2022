@@ -1,13 +1,13 @@
 import scala.io.Source
-import scala.io.Source.*
 import scala.annotation.tailrec
+
 
 //number of elves to find the max for
 val n = 3
 
 def day1(): Unit = {
 
-  val filename = "/Users/nfitzge4/advent/advent20222/inputs/day1.txt"
+  val filename = "/Users/nfitzge4/advent/advent20222/advent2022/inputs/day1.txt"
   val source = Source.fromFile(filename)
   val fileContents = source.getLines.map(c => c.toIntOption).toList
   source.close()

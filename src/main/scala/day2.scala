@@ -1,17 +1,15 @@
 import scala.io.Source
-import scala.io.Source.*
+
 import scala.annotation.tailrec
 
-
-@main
-def main(): Unit = {
-  val filename = "/Users/nfitzge4/advent/advent20222/inputs/day2.txt"
+def day2(): Unit = {
+  val filename = "/Users/nfitzge4/advent/advent20222/advent2022/inputs/day2.txt"
   val source = Source.fromFile(filename)
   val fileContents = source.getLines.map(line => (line.charAt(0), line.charAt(2))).toList
   source.close()
 
-  val p1Result = day2(fileContents, p1LookupTable)
-  val p2Result = day2(fileContents, p2LookupTable)
+  val p1Result = day2Rec(fileContents, p1LookupTable)
+  val p2Result = day2Rec(fileContents, p2LookupTable)
   println(p1Result)
   println(p2Result)
 }
@@ -30,9 +28,9 @@ val p2LookupTable: Map[Char, Map[Char, Int]] =
 
 //probably could have just done this as a fold instead
 @tailrec
-def day2(in: List[(Char, Char)], lookupTable: Map[Char, Map[Char, Int]], total: Int = 0): Int =
+def day2Rec(in: List[(Char, Char)], lookupTable: Map[Char, Map[Char, Int]], total: Int = 0): Int =
   in match {
     case Nil => total
     case head :: tail =>
-      day2(tail, lookupTable, total + lookupTable(head._1)(head._2))
+      day2Rec(tail, lookupTable, total + lookupTable(head._1)(head._2))
   }

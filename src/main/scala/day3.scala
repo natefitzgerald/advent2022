@@ -2,8 +2,7 @@ import scala.io.Source
 
 import scala.annotation.tailrec
 
-@main
-def main(): Unit = {
+def day3(): Unit = {
   val filename = "/Users/nfitzge4/advent/advent20222/advent2022/inputs/day3.txt"
   val source = Source.fromFile(filename)
   val input = source.getLines.toList
