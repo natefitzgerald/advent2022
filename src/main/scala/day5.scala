@@ -2,8 +2,8 @@ import scala.io.Source
 
 import scala.annotation.tailrec
 
-@main
-def main(): Unit = {
+
+def day5(): Unit = {
   val filename = "/Users/nfitzge4/advent/advent20222/advent2022/inputs/day5.txt"
   val source = Source.fromFile(filename)
   val input = source.getLines.toList
@@ -22,6 +22,7 @@ def main(): Unit = {
   }).toList.sortBy(_._1).map(crates => crates._2.headOption.getOrElse(" ")).mkString("")
   println(tops)
 }
+
 /**
 this one's dense. first we find the end index of the top block and call that the pivot. we parse that out into lists of lists of characters
 then we use the transpose function to just flip them (real convenient). after all that we have a list of the stacks, with the top of the stack first.
@@ -30,3 +31,4 @@ front of the stack for the source stack and add it to the front of the destinati
 
 this would absolutely not be performant on a super large data set because im using scala's default immutable collections.
 this also cannot accommodate a starting grid that isn't a perfect square unless i write my own transpose() since apparently that's a limitation there
+**/

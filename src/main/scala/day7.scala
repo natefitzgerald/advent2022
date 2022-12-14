@@ -5,8 +5,8 @@ import scala.collection.mutable.*
 import scala.util.Try
 
 
-@main
-def main(): Unit = {
+
+def day7(): Unit = {
   val filename = "/Users/nfitzge4/advent/advent20222/advent2022/inputs/day7.txt"
   val source = Source.fromFile(filename)
   val input = source.getLines.toList.filter(s => s != "$ ls" && !s.startsWith("dir"))
