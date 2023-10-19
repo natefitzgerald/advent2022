@@ -9,3 +9,27 @@
 1669930605043:run
 1670006654078:compile
 1670006753783:run
+1670021986063:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/6n/12f3m4l56n1gqmn12t_y68x80000gp/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/nfitzge4/Library/Application Support/JetBrains/IntelliJIdea2022.1/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.3.0/sbt-structure-extractor-2021.3.0.jar" org.jetbrains.sbt.CreateTasks;preferScala2;*/*:dumpStructure
+1670179555294:run
+1670179630431:exit
+1670179672149:run
+1670181986296:exit
+1670271163686:run
+1670274993086:exit
+1670364839027:rin
+1670364840577:run
+1670375159578:exit
+1670446068096:run
+1670448327500:compile
+1670448357769:run
+1670533051365:compile
+1670533053230:run
+1670536086497:exit
+1670611332472:run
+1670621796338:exit
+1670621812362:run
+1670624551361:exit
+1671045712759:run
+1671050601774:exit
+1671053909658:run
+1697212163874:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/6n/12f3m4l56n1gqmn12t_y68x80000gp/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/nfitzge4/Library/Application Support/JetBrains/IntelliJIdea2022.1/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.3.0/sbt-structure-extractor-2021.3.0.jar" org.jetbrains.sbt.CreateTasks;preferScala2;*/*:dumpStructure
